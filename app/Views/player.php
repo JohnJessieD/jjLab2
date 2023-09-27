@@ -10,53 +10,62 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="<?= base_url('public/include/js/script.js') ?>"></script>
-
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f5f5f5;
-            padding: 10px;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background:url(https://i.pinimg.com/564x/aa/1a/11/aa1a1101ec048018196b174b13171755.jpg); /* Light gray background */
+        background-size: cover; /* Adjust as needed to cover the entire background */
+           background-repeat: no-repeat; /* Prevent image repetition */
+           background-attachment: fixed; /* Fixed background */
+        padding: 20px; /* Increased padding */
+    }
 
-        h1 {
-            color: #333;
-        }
+    h1 {
+        color: #333;
+        margin-bottom: 20px; /* Added margin below the heading */
+    }
 
-        #player-container {
-            max-width: 250px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
+    #player-container {
+        max-width: 400px; /* Increased max-width for better layout */
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f0f0f0; /* Light gray background */
+        background-size: cover; /* Adjust as needed to cover the entire background */
+           background-repeat: no-repeat; /* Prevent image repetition */
+           background-attachment: fixed; /* Fixed background */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Increased shadow */
+        border-radius: 10px; /* Rounded corners */
+    }
 
-        audio {
-            width: 100%;
-        }
+    audio {
+        width: 100%;
+    }
 
-        #playlist {
-            list-style: none;
-            padding: 0;
-        }
+    #playlist {
+        list-style: none;
+        padding: 0;
+    }
 
-        #playlist li {
-            cursor: pointer;
-            padding: 10px;
-            background-color: #eee;
-            margin: 5px 0;
-            transition: background-color 0.2s ease-in-out;
-        }
+    #playlist li {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #e2e3e5; /* Light gray background */
+        margin: 10px 0; /* Increased margin */
+        transition: background-color 0.2s ease-in-out;
+        border-radius: 5px; /* Rounded corners */
+    }
 
-        #playlist li:hover {
-            background-color: #ddd;
-        }
+    #playlist li:hover {
+        background-color: #d3d6db; /* Slightly darker gray on hover */
+    }
 
-        #playlist li.active {
-            background-color: #007bff;
-            color: #fff;
-        }
-    </style>
+    #playlist li.active {
+        background-color: #007bff; /* Blue background for active track */
+        color: #fff;
+    }
+</style>
+
 </head>
 
 <body>
